@@ -1,0 +1,18 @@
+import cv2 as cv
+
+# img = cv.imread("Photos/lady.jpg")
+vid = cv.VideoCapture("Videos/dog.mp4")
+
+while True {
+  key, frame = vid.read()
+
+  cv.imshow("Frame", frame)
+
+  if cv.waitKey(20) & 0xFF == 27 {
+    break
+  }
+
+} 
+
+vid.release()
+cv.destroyAllWindows()
