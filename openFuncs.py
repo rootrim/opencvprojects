@@ -1,6 +1,11 @@
 import matplotlib.pyplot as plt
+import matplotlib
 import numpy as np
 import cv2 as cv
+
+
+def kitty():
+    matplotlib.use("module://matplotlib-backend-kitty")
 
 
 def imshow(img: np.ndarray, cmap=""):
