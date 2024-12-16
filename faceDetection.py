@@ -14,7 +14,7 @@ def main():
         if not ret:
             break
 
-        faceRect = faceCascade.detectMultiScale(thepicture, minNeighbors=5)
+        faceRect = faceCascade.detectMultiScale(thepicture)
 
         detectedSigma: np.ndarray
 
