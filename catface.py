@@ -8,9 +8,9 @@ def main():
 
     catCascade = cv.CascadeClassifier("Data/haarcascade_frontalcatface.xml")
 
-    strayCatto = cv.imread("Photos/cats.jpg", 0)
+    strayCatto = cv.imread("Photos/cat.jpg", 0)
 
-    catRect = catCascade.detectMultiScale(strayCatto, minNeighbors=2)
+    catRect = catCascade.detectMultiScale(strayCatto)
 
     for x, y, w, h in catRect:
         res = cv.rectangle(strayCatto, (x, y), (x + w, y + h), (255, 256, 255), 5)

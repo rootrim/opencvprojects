@@ -12,7 +12,11 @@ def main():
 
     _, threshed = cv.threshold(gray, 65, 255, cv.THRESH_BINARY)
 
+    of.imshow(threshed, "gray")
+
     dist = cv.distanceTransform(threshed, cv.DIST_L2, 5)
+
+    of.imshow(dist, "gray")
 
     _, foreg = cv.threshold(dist, 0, 255, 0)
 

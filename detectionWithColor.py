@@ -25,6 +25,7 @@ def main():
             mask = cv.inRange(hsv, lower, upper)
 
             mask_eroded = cv.erode(mask, None, iterations=2)
+
             mask_dilated = cv.dilate(mask_eroded, None, iterations=2)
             cv.imshow("Mask (Erosion & Dilation)", mask_dilated)
 

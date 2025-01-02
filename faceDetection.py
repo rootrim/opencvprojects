@@ -19,10 +19,10 @@ def main():
 
         for x, y, w, h in faceRect:
             detectedSigma = cv.rectangle(
-                thepicture,
+                frame,
                 (x, y),
                 (x + w, y + h),
-                (255, 255, 255),
+                (0, 255, 0),
                 3,
             )
 

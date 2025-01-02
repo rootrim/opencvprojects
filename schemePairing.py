@@ -3,9 +3,6 @@ import openFuncs as of
 import numpy as np
 
 
-of.kitty()
-
-
 def main():
     imgOrj: np.ndarray = cv.imread("Photos/nekochanbeddo.jpg")
     img: np.ndarray = cv.imread("Photos/nekochanbeddo.jpg", 0)
