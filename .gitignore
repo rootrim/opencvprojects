@@ -1,2 +1,6 @@
 /__pycache__/
 /Videos/MOT17
+/Data/fruits
+/cnn_env
+/penv
+*.mp4
