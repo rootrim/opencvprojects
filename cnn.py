@@ -1,21 +1,21 @@
-import numpy as np
-import cv2 as cv
 import os
-from sklearn.model_selection import train_test_split
-import seaborn as sns
-import matplotlib.pyplot as plt
-from keras.api.models import Sequential
-from keras.api.layers import (
-    Dense,
-    Conv2D,
-    MaxPooling2D,
-    Flatten,
-    Dropout,
-    BatchNormalization,
-)
-from keras.api.utils import to_categorical
-from keras.api.preprocessing.image import ImagaeDataGenerator
 import pickle
+
+import cv2 as cv
+import matplotlib.pyplot as plt
+import numpy as np
+import seaborn as sns
+from keras.api.layers import (
+    BatchNormalization,
+    Conv2D,
+    Dense,
+    Dropout,
+    Flatten,
+    MaxPooling2D,
+)
+from keras.api.models import Sequential
+from keras.api.utils import image_dataset_from_directory, to_categorical
+from sklearn.model_selection import train_test_split
 
 
 def main():
