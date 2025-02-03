@@ -1,3 +1,4 @@
 {
-  "python.analysis.extraPaths": ["./cnn/lib/python3.12/site-packages"]
+  "venvPath": "/home/rootrim/projects/programing/pytrim/opencv/cnn",
+  "venv": "lib/python3.12/site-packages"
 }
