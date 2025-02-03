@@ -1,0 +1,3 @@
+{
+  "python.analysis.extraPaths": ["./cnn/lib/python3.12/site-packages"]
+}

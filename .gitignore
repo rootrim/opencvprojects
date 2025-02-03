@@ -4,3 +4,5 @@
 /cnn
 /penv
 *.mp4
+*.keras
+*.h5
